@@ -170,6 +170,15 @@ export default function CostOfLiving() {
             </div>
           </div>
         </div>
+        {/* SEO Content */}
+        <div className="mt-12 border-t border-gray-100 pt-8 pb-4">
+          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-400 leading-relaxed">
+            <p className="font-medium text-gray-500 text-sm">About This Cost of Living Calculator</p>
+            <p>Moving to a new city? Use this cost of living calculator to find out what salary you need in your destination city to maintain the same purchasing power. Compare cities like New York, San Francisco, Los Angeles, Chicago, Miami, Houston, Seattle, Denver, and Phoenix.</p>
+            <p>Cost of living indices factor in housing, groceries, transportation, utilities, and healthcare. A $100,000 salary in Miami is equivalent to roughly $158,000 in San Francisco. Houston and Phoenix offer the lowest costs among major US cities, while San Francisco and New York are the most expensive.</p>
+            <p>Common searches: cost of living calculator · city salary comparison · salary equivalent by city · how much do I need to earn in New York · San Francisco cost of living salary · relocating salary calculator · compare cost of living · purchasing power calculator · cost of living index US cities · is it cheaper to live in Houston than LA</p>
+          </div>
+        </div>
       </main>
     </div>
   );
