@@ -241,7 +241,6 @@ export default function JobOfferComparison() {
         {/* SEO Content */}
         <div className="mt-12 border-t border-gray-100 pt-8 pb-4">
           <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-400 leading-relaxed">
-            <p className="font-medium text-gray-500 text-sm">About This Job Offer Comparison Calculator</p>
             <p>Comparing two or more job offers? Don't just look at the base salary — a $120,000 offer in Texas (no income tax) can be worth significantly more than $125,000 in California (up to 13.3% state tax). This calculator compares offers side-by-side showing after-tax income, effective tax rate, federal tax, state tax, and monthly take-home pay.</p>
             <p>Use this tool when evaluating salary negotiations, career moves, or remote work opportunities in different states. States with no income tax include Florida, Texas, Nevada, Washington, and Tennessee — which can add thousands to your real compensation.</p>
             <p>Common searches: job offer comparison calculator · compare two job offers · salary comparison after tax · best state for salary tax · no income tax states · job offer net pay · compare salaries different states · which job offer is better · salary negotiation calculator · total compensation comparison</p>

@@ -182,6 +182,17 @@ export default function Home() {
             </a>
           ))}
         </div>
+
+        {/* SEO Content */}
+        <div className="mt-16 border-t border-gray-100 pt-10 pb-6">
+          <div className="max-w-3xl mx-auto space-y-4 text-xs text-gray-400 leading-relaxed">
+            <p className="text-sm text-gray-500 font-medium">Free Salary & Tax Calculators</p>
+            <p>Salary-Calculate.com offers a free suite of salary and tax calculators designed to help employees, freelancers, and job seekers understand their true take-home pay. Whether you're negotiating a new job offer, planning a move to a new city, or figuring out your self-employment taxes, our tools give you instant, accurate results.</p>
+            <p>Our after-tax income calculator covers all 50 states and accounts for federal income tax brackets, FICA (Social Security and Medicare), and state income tax. The salary-to-hourly converter lets you factor in PTO and actual hours worked to find your real effective hourly rate. The self-employment tax calculator helps freelancers, 1099 contractors, gig workers, and sole proprietors estimate quarterly estimated taxes and take-home income.</p>
+            <p>Use the job offer comparison tool to evaluate two or more offers side-by-side after all taxes — because a $120,000 offer in Texas with no state income tax can be worth more than $130,000 in California. The cost of living calculator shows what your salary is really worth in cities like New York, San Francisco, Los Angeles, Chicago, Miami, Houston, Seattle, Denver, and Phoenix.</p>
+            <p>Common searches: salary calculator · take home pay calculator · after tax income · paycheck calculator · hourly wage calculator · self employment tax · freelancer tax calculator · 1099 tax calculator · cost of living comparison · job offer comparison · raise calculator · net pay calculator · how much do I take home · what is my effective tax rate · salary after taxes 2024 · biweekly paycheck calculator · annual salary to monthly · income tax estimator</p>
+          </div>
+        </div>
       </main>
     </div>
   );
