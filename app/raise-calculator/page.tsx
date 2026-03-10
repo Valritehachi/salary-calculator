@@ -42,7 +42,7 @@ export default function RaiseCalculator() {
           <p>Extra Yearly: ${extraYearly.toFixed(2)}</p>
         </div>
         <a href="/" className="mt-6 inline-block text-blue-600 hover:text-blue-800">Back to Home</a>
-        <div className="mt-8 pt-6 border-t border-gray-100 space-y-3 text-xs text-gray-400 leading-relaxed">
+        <div className="mt-8 pt-6 border-t border-gray-100 space-y-3 text-xs text-gray-600 leading-relaxed">
           <p>Use this salary raise calculator to find out exactly how much more money you'll earn after a raise. Enter your current salary and raise percentage to instantly see your new annual salary, extra monthly income, and total yearly increase.</p>
           <p>Whether you've received a merit increase, cost of living adjustment (COLA), or promotion, this tool helps you understand the real dollar impact. A 5% raise on a $75,000 salary equals $3,750 more per year — or about $312 extra per month before taxes.</p>
           <p>Common searches: raise calculator · salary increase calculator · how much is a 5% raise · pay raise calculator · merit increase · cost of living raise · promotion salary calculator · percentage raise calculator · annual raise calculator · how much will I make after a raise</p>

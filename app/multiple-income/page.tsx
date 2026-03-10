@@ -403,7 +403,7 @@ export default function MultipleIncome() {
         </div>
         {/* SEO Content */}
         <div className="mt-12 border-t border-gray-100 pt-8 pb-4">
-          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-400 leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-600 leading-relaxed">
             <p>Have more than one job, a side hustle, or multiple income streams? This calculator combines all your income sources — salary, freelance work, rental income, investments — and calculates the total federal tax, state tax, and FICA on your combined earnings.</p>
             <p>Having multiple income sources can push you into a higher tax bracket. This tool shows your combined effective tax rate, total annual take-home, and a visual breakdown of where your money goes. Use it to plan quarterly estimated taxes or understand the true cost of picking up extra work.</p>
             <p>Common searches: multiple income streams calculator · dual income tax calculator · two jobs tax calculator · side hustle income tax · combined household income · second job tax withholding · total income tax calculator · how much tax on multiple jobs · freelance plus full time job taxes · passive income tax calculator</p>

@@ -360,7 +360,7 @@ export default function AfterTax() {
         </div>
         {/* SEO Content */}
         <div className="mt-12 border-t border-gray-100 pt-8 pb-4">
-          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-400 leading-relaxed">
+          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-600 leading-relaxed">
             <p>Use our free after-tax income calculator to instantly see your real take-home pay after federal income tax, state income tax, and FICA deductions (Social Security and Medicare). Enter your annual salary, filing status, and state to get an accurate net income estimate.</p>
             <p>This paycheck calculator covers all major tax categories: federal tax brackets (10%, 12%, 22%, 24%, 32%, 35%, 37%), state income tax rates, Social Security tax (6.2%), and Medicare tax (1.45%). The effective tax rate shown reflects your average rate across all income — not just your marginal bracket.</p>
             <p>Common searches: after tax calculator · take home pay calculator · net income calculator · salary after taxes · paycheck calculator · income tax calculator · federal tax calculator · gross to net pay · W-4 withholding calculator · biweekly paycheck calculator · how much is taken out of my paycheck · marginal vs effective tax rate · 2024 tax brackets</p>
