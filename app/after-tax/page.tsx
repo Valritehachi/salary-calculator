@@ -74,6 +74,7 @@ function calculateFederalTax(salary: number, status: string): number {
   return tax;
 }
 
+
 function fmt(n: number) {
   return n.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 }
