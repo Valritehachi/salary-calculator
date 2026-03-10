@@ -183,11 +183,10 @@ export default function Home() {
           ))}
         </div>
 
-        {/* SEO Content */}
-        <div className="mt-16 border-t border-gray-100 pt-10 pb-6">
-          <div className="max-w-3xl mx-auto space-y-3 text-sm text-gray-700 leading-relaxed">
-            <p>Free salary and tax calculators for employees, freelancers, and job seekers. Calculate your real take-home pay after federal tax, state tax, and FICA — or compare job offers, convert your salary to hourly, and see what your income is worth in another city.</p>
-            <p className="text-xs text-gray-400">salary calculator · take home pay · after tax income · paycheck calculator · hourly wage · self employment tax · 1099 calculator · cost of living · job offer comparison · raise calculator · net pay · income tax estimator · biweekly paycheck · salary after taxes</p>
+        {/* Footer */}
+        <div className="mt-16 pt-8 pb-6">
+          <div className="border-t border-gray-200 pt-8 text-center">
+            <p className="text-sm text-gray-500">Free salary and tax calculators for employees, freelancers, and job seekers. Calculate your real take-home pay after federal tax, state tax, and FICA — or compare job offers, convert your salary to hourly, and see what your income is worth in another city.</p>
           </div>
         </div>
       </main>
