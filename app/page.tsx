@@ -110,7 +110,7 @@ export default function Home() {
         {/* Hero */}
         <div className="text-center mb-6">
           <h2 className="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
-            Discover Your Salary's{" "}
+            Discovervvv Your Salary's{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
               True Value
             </span>
