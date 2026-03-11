@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 
+
 const stateTaxRates: { [key: string]: number } = {
   'Florida': 0,
   'Texas': 0,
