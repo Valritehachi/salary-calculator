@@ -238,12 +238,14 @@ export default function JobOfferComparison() {
             )}
           </div>
         </div>
-        {/* SEO Content */}
-        <div className="mt-12 border-t border-gray-100 pt-8 pb-4">
-          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-600 leading-relaxed">
-            <p>Comparing two or more job offers? Don't just look at the base salary — a $120,000 offer in Texas (no income tax) can be worth significantly more than $125,000 in California (up to 13.3% state tax). This calculator compares offers side-by-side showing after-tax income, effective tax rate, federal tax, state tax, and monthly take-home pay.</p>
-            <p>Use this tool when evaluating salary negotiations, career moves, or remote work opportunities in different states. States with no income tax include Florida, Texas, Nevada, Washington, and Tennessee — which can add thousands to your real compensation.</p>
-            <p>Common searches: job offer comparison calculator · compare two job offers · salary comparison after tax · best state for salary tax · no income tax states · job offer net pay · compare salaries different states · which job offer is better · salary negotiation calculator · total compensation comparison</p>
+        <div className="mt-8 border-t border-gray-100 pt-6 pb-8">
+          <div className="max-w-3xl mx-auto space-y-2">
+            {[
+              { q: "Don't just compare base salaries.", a: "A $120k offer in Texas can beat $125k in California once state taxes are factored in. Location changes the math significantly." },
+              { q: 'What else should I factor in beyond salary?', a: '401k match, health insurance premiums, equity, and commute costs can each be worth thousands — sometimes more than the salary gap itself.' },
+            ].map(({ q, a }) => (
+              <p key={q} className="text-sm text-gray-500"><span className="font-medium text-gray-700">{q}</span>{' '}{a}</p>
+            ))}
           </div>
         </div>
       </main>

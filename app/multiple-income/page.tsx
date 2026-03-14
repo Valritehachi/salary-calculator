@@ -401,12 +401,14 @@ export default function MultipleIncome() {
             )}
           </div>
         </div>
-        {/* SEO Content */}
-        <div className="mt-12 border-t border-gray-100 pt-8 pb-4">
-          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-600 leading-relaxed">
-            <p>Have more than one job, a side hustle, or multiple income streams? This calculator combines all your income sources — salary, freelance work, rental income, investments — and calculates the total federal tax, state tax, and FICA on your combined earnings.</p>
-            <p>Having multiple income sources can push you into a higher tax bracket. This tool shows your combined effective tax rate, total annual take-home, and a visual breakdown of where your money goes. Use it to plan quarterly estimated taxes or understand the true cost of picking up extra work.</p>
-            <p>Common searches: multiple income streams calculator · dual income tax calculator · two jobs tax calculator · side hustle income tax · combined household income · second job tax withholding · total income tax calculator · how much tax on multiple jobs · freelance plus full time job taxes · passive income tax calculator</p>
+        <div className="mt-8 border-t border-gray-100 pt-6 pb-8">
+          <div className="max-w-3xl mx-auto space-y-2">
+            {[
+              { q: 'Does a side hustle push me into a higher tax bracket?', a: 'It can. All income is combined before tax is calculated, so a side hustle stacks on top of your salary and may be taxed at your highest marginal rate.' },
+              { q: 'Should I set aside money from freelance income?', a: 'Yes — freelance income has no withholding. Save 25–30% as you earn it to cover federal, state, and self-employment tax at filing time.' },
+            ].map(({ q, a }) => (
+              <p key={q} className="text-sm text-gray-500"><span className="font-medium text-gray-700">{q}</span>{' '}{a}</p>
+            ))}
           </div>
         </div>
       </main>

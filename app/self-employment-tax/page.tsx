@@ -198,12 +198,14 @@ export default function SelfEmploymentTax() {
             </div>
           </div>
         </div>
-        {/* SEO Content */}
-        <div className="mt-12 border-t border-gray-100 pt-8 pb-4">
-          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-600 leading-relaxed">
-            <p>Freelancers, gig workers, independent contractors, and sole proprietors pay both the employee and employer portions of Social Security and Medicare — totaling 15.3% on 92.35% of net earnings. This calculator shows your exact SE tax, federal income tax after the SE deduction, state tax, and quarterly estimated payment amounts.</p>
-            <p>The IRS allows self-employed individuals to deduct 50% of their SE tax from gross income before calculating federal income tax. This calculator applies that deduction automatically. Quarterly estimated taxes are due April 15, June 15, September 15, and January 15.</p>
-            <p>Common searches: self employment tax calculator · 1099 tax calculator · freelancer tax · independent contractor taxes · quarterly estimated tax payments · Schedule SE · gig worker taxes · Uber Lyft DoorDash taxes · how much tax do I owe self employed · sole proprietor income tax · how much to set aside for taxes freelance</p>
+        <div className="mt-8 border-t border-gray-100 pt-6 pb-8">
+          <div className="max-w-3xl mx-auto space-y-2">
+            {[
+              { q: 'Why is self-employment tax 15.3%?', a: 'As an employee you only pay half (7.65%) — your employer covers the rest. Self-employed, you pay both sides.' },
+              { q: 'How much should I set aside for taxes?', a: 'A safe rule of thumb is 25–30% of net income. Use the quarterly figure above to avoid underpayment penalties.' },
+            ].map(({ q, a }) => (
+              <p key={q} className="text-sm text-gray-500"><span className="font-medium text-gray-700">{q}</span>{' '}{a}</p>
+            ))}
           </div>
         </div>
       </main>

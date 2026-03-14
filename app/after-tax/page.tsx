@@ -358,12 +358,78 @@ export default function AfterTax() {
             </div>
           </div>
         </div>
-        {/* SEO Content */}
-        <div className="mt-12 border-t border-gray-100 pt-8 pb-4">
-          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-600 leading-relaxed">
-            <p>Use our free after-tax income calculator to instantly see your real take-home pay after federal income tax, state income tax, and FICA deductions (Social Security and Medicare). Enter your annual salary, filing status, and state to get an accurate net income estimate.</p>
-            <p>This paycheck calculator covers all major tax categories: federal tax brackets (10%, 12%, 22%, 24%, 32%, 35%, 37%), state income tax rates, Social Security tax (6.2%), and Medicare tax (1.45%). The effective tax rate shown reflects your average rate across all income — not just your marginal bracket.</p>
-            <p>Common searches: after tax calculator · take home pay calculator · net income calculator · salary after taxes · paycheck calculator · income tax calculator · federal tax calculator · gross to net pay · W-4 withholding calculator · biweekly paycheck calculator · how much is taken out of my paycheck · marginal vs effective tax rate · 2024 tax brackets</p>
+        {/* FAQ + JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: 'How much of my paycheck goes to taxes?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'For most Americans, 25–35% of gross pay goes to taxes. This includes federal income tax (10–37% depending on your bracket), FICA taxes (7.65% for Social Security and Medicare), and state income tax (0–10% depending on your state). Your effective tax rate — the actual percentage you pay — is lower than your marginal bracket because only income above each threshold is taxed at the higher rate.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What is the difference between effective and marginal tax rate?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Your marginal tax rate is the rate applied to your last dollar of income — the top bracket you fall into. Your effective tax rate is the average rate across all your income. For example, on an $80,000 salary you are in the 22% marginal bracket, but your effective federal rate is closer to 15% because the first $11,000 is taxed at 10%, the next $33,725 at 12%, and so on.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How is FICA tax calculated?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'FICA (Federal Insurance Contributions Act) tax is 7.65% of your gross wages as an employee: 6.2% for Social Security (on earnings up to $160,200 in 2023) and 1.45% for Medicare (no wage cap). Your employer matches this 7.65%, so the total FICA contribution is 15.3% of your pay.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Does filing status affect how much tax I pay?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Yes, significantly. Married Filing Jointly filers benefit from wider tax brackets — for example, the 12% bracket extends to $89,450 for MFJ vs $44,725 for Single filers. Head of Household also gets slightly wider brackets than Single. Choosing the correct filing status is one of the most impactful ways to reduce your tax bill.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Which states have no income tax?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Nine US states have no individual income tax: Alaska, Florida, Nevada, New Hampshire, South Dakota, Tennessee, Texas, Washington, and Wyoming. Living in one of these states can meaningfully increase your take-home pay — for example, a $100,000 earner in California pays roughly $8,000 in state income tax, while the same earner in Texas pays $0.',
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+        <div className="mt-8 border-t border-gray-100 pt-6 pb-8">
+          <div className="max-w-3xl mx-auto space-y-2">
+            {[
+              {
+                q: 'What\'s the difference between effective and marginal tax rate?',
+                a: 'Your marginal rate is your top bracket — the rate on your last dollar. Your effective rate is the average across all income, which is always lower.',
+              },
+              {
+                q: 'Which states have no income tax?',
+                a: 'Florida, Texas, Nevada, Washington, Tennessee, and four others. A $100k earner in California pays ~$8,000 in state tax; in Texas, $0.',
+              },
+              {
+                q: 'How is FICA calculated?',
+                a: '7.65% of gross pay — 6.2% Social Security (capped at $160,200) + 1.45% Medicare. Your employer matches it, so the total contribution is 15.3%.',
+              },
+            ].map(({ q, a }) => (
+              <p key={q} className="text-sm text-gray-500">
+                <span className="font-medium text-gray-700">{q}</span>{' '}{a}
+              </p>
+            ))}
           </div>
         </div>
       </main>

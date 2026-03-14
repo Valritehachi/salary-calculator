@@ -172,12 +172,14 @@ export default function SalaryToHourly() {
             ))}
           </div>
         </div>
-        {/* SEO Content */}
-        <div className="mt-12 border-t border-gray-100 pt-8 pb-4">
-          <div className="max-w-3xl mx-auto space-y-3 text-xs text-gray-600 leading-relaxed">
-            <p>Convert your annual salary to an hourly wage instantly. This salary-to-hourly calculator accounts for hours worked per week, weeks per year, and paid time off (PTO) days to give you your true effective hourly rate — not just a simple division.</p>
-            <p>Whether you're comparing a salaried position to a contract role, negotiating pay, or just curious what your time is worth, this tool breaks down your earnings per hour, per day, per week, bi-weekly, and monthly.</p>
-            <p>Common searches: salary to hourly calculator · annual salary to hourly rate · hourly wage calculator · convert yearly salary to hourly · how much is my salary per hour · $50000 a year is how much an hour · $60000 a year hourly · $75000 salary to hourly · $100000 a year per hour · part-time hourly rate · biweekly paycheck · weekly pay calculator</p>
+        <div className="mt-8 border-t border-gray-100 pt-6 pb-8">
+          <div className="max-w-3xl mx-auto space-y-2">
+            {[
+              { q: 'Why does my hourly rate change with PTO days?', a: 'Paid days off reduce your actual working hours while keeping your annual pay the same — so each hour you work is worth more.' },
+              { q: 'Salaried vs hourly — which is better?', a: 'Salary offers stability; hourly gives you overtime pay. Compare them using your actual weekly hours — a $70k salary at 50 hrs/week is only $26.92/hr.' },
+            ].map(({ q, a }) => (
+              <p key={q} className="text-sm text-gray-500"><span className="font-medium text-gray-700">{q}</span>{' '}{a}</p>
+            ))}
           </div>
         </div>
       </main>
